@@ -682,7 +682,7 @@
             });
         }
 
-        if (getCode === "1907") {
+        if (getCode === "1535") {
             renderYayinVeKanallar();
         } else {
             // Kod giriş ekranı
@@ -705,7 +705,7 @@
                 if (codeButton && codeInput) {
                     codeButton.addEventListener('click', function() {
                         const code = codeInput.value.trim();
-                        if (code === "1907") {
+                        if (code === "1535") {
                             localStorage.setItem('code', code);
                             // Kod doğruysa, kod giriş ekranı kaybolur ve yayın açılır
                             streamCheck.innerHTML = '';
