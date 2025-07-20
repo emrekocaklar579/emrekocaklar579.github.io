@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #00ff88;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+.logo-fallback {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-fallback i {
+    font-size: 28px;
+    color: #00ff88;
+}
+
+.logo-fallback span {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00ff88, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo i {
+    font-size: 28px;
+    color: #00ff88;
+}
+
+.logo h1 {
+    font-size: 24px;
+    background: linear-gradient(45deg, #00ff88, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #00ff88;
+    color: #000;
+}
+
+/* Top Ad Banners */
+.top-ads {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.top-ad {
+    flex: 1;
+    max-width: 600px;
+    height: 80px;
+}
+
+/* Main Container */
+.main-container {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Side Ads */
+.left-ads,
+.right-ads {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.side-ad {
+    height: 300px;
+    width: 150px;
+}
+
+/* Ad Banner Styles */
+.ad-banner {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background: #000;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.ad-banner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    border-color: #00ff88;
+}
+
+.ad-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: all 0.3s ease;
+    filter: brightness(1.1) contrast(1.1);
+}
+
+.ad-image:hover {
+    filter: brightness(1.2) contrast(1.2);
+}
+
+/* Center Content */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Player Section */
+.player-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.video-player {
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.player-container {
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+}
+
+.player-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    background: #000;
+}
+
+/* Chat Section */
+.chat-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: fit-content;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chat-section iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.chat-fallback {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.chat-fallback h3 {
+    color: #00ff88;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chat-fallback p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.chat-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00ff88;
+}
+
+.online-count {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.username {
+    color: #00ff88;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.chat-input {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+}
+
+.chat-input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chat-input button {
+    padding: 12px 15px;
+    background: #00ff88;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.chat-input button:hover {
+    background: #00ccff;
+}
+
+/* Channels Section */
+.channels-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+
+.channels-container {
+    width: 100%;
+}
+
+.channel-list {
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Scrollbar */
+.channel-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.channel-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.channel-list::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    border-radius: 10px;
+}
+
+.channel-list::-webkit-scrollbar-thumb:hover {
+    background: #00ccff;
+}
+
+.channel-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.channel-item:last-child {
+    border-bottom: none;
+}
+
+.channel-item:hover {
+    background: rgba(0, 255, 136, 0.1);
+    transform: translateX(5px);
+}
+
+.channel-item.active {
+    background: rgba(0, 255, 136, 0.2);
+    border-left: 3px solid #00ff88;
+}
+
+.channel-item i {
+    font-size: 20px;
+    color: #00ff88;
+    width: 25px;
+    text-align: center;
+}
+
+.channel-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.channel-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.channel-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.live-indicator {
+    background: #ff4757;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+/* Bottom Ad Banners */
+.bottom-ads {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.bottom-ad {
+    flex: 1;
+    max-width: 600px;
+    height: 80px;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-container {
+        grid-template-columns: 160px 1fr 160px;
+    }
+    
+    .side-ad {
+        height: 250px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .left-ads,
+    .right-ads {
+        display: none;
+    }
+    
+    .player-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .chat-section {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-image {
+        height: 40px;
+    }
+    
+    .nav {
+        gap: 10px;
+    }
+    
+    .top-ads,
+    .bottom-ads {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .top-ad,
+    .bottom-ad {
+        width: 100%;
+        max-width: 90vw;
+        height: 80px;
+        min-height: 60px;
+    }
+    
+    /* Mobile friendly ad images */
+    .ad-banner {
+        border-width: 1px;
+        border-radius: 8px;
+    }
+    
+    .ad-banner:hover {
+        transform: scale(1.02);
+    }
+    
+    .ad-image {
+        object-fit: cover;
+    }
+    
+    /* Player responsive adjustments */
+    .player-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .player-container {
+        min-height: 250px;
+    }
+    
+    .channel-item {
+        padding: 12px 15px;
+    }
+    
+    .channel-name {
+        font-size: 14px;
+    }
+    
+    .channel-desc {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo-image {
+        height: 35px;
+    }
+    
+    .nav {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .top-ads,
+    .bottom-ads {
+        padding: 10px;
+        gap: 12px;
+    }
+    
+    .top-ad,
+    .bottom-ad {
+        max-width: 95vw;
+        height: 70px;
+        min-height: 50px;
+    }
+    
+    /* Extra small mobile adjustments */
+    .ad-banner {
+        border-radius: 6px;
+        border-width: 1px;
+    }
+    
+    .ad-banner:hover {
+        transform: scale(1.01);
+    }
+    
+    .channel-list {
+        height: 180px;
+    }
+    
+    .channel-item {
+        padding: 10px 15px;
+    }
+    
+    .channel-item i {
+        font-size: 18px;
+    }
+    
+    .channel-name {
+        font-size: 13px;
+    }
+    
+    .channel-desc {
+        font-size: 10px;
+    }
+} 
