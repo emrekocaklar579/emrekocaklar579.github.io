@@ -479,6 +479,18 @@
       gtag('js', new Date());
     
       gtag('config', 'G-SZHQ0RGFT7');
+
+                  window.addEventListener('load', function() {
+        var pageRef = document.referrer;
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('source') === 'maps') {
+          pageRef = 'google_maps';
+        }
+        gtag('event', 'geldi_orospu_cucugu', {
+          'event_category': 'Sayfa',
+          'page_referrer': pageRef
+        });
+      });
     </script>
 
     <script>
