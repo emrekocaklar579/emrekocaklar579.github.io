@@ -480,22 +480,22 @@
   <script>
     const kanalList = [
         {
-            name: "Galatasaray vs Admira Wacker - Hazırlık Maçı 20:30",
+            name: "Galatasaray vs Cagliari - Hazırlık Maçı 20:30",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
             link: "https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8",
             id: "porn"
         },
         {
-            name: "Fenerbahçe - Portimonense - Hazırlık Maçı 22:00",
+            name: "Fenerbahçe vs Al Ittihad - Hazırlık Maçı 22:00",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
             link: "https://mute-band-484e.ubnejb.workers.dev/fbmac/index.m3u8",
             id: "trt1amk3"
         },
         {
-            name: "Malum Kanal 2",
+            name: "Como vs Al Ahli - Como Kupası 21:30",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/porn2/index.m3u8",
-            id: "porn-2"
+            link: "https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8",
+            id: "qweqweqweqw31"
         },
         {
             name: "Malum Kanal 3",
@@ -682,7 +682,7 @@
             });
         }
 
-        if (getCode === "1535") {
+        if (getCode === "1646") {
             renderYayinVeKanallar();
         } else {
             // Kod giriş ekranı
@@ -705,7 +705,7 @@
                 if (codeButton && codeInput) {
                     codeButton.addEventListener('click', function() {
                         const code = codeInput.value.trim();
-                        if (code === "1535") {
+                        if (code === "1646") {
                             localStorage.setItem('code', code);
                             // Kod doğruysa, kod giriş ekranı kaybolur ve yayın açılır
                             streamCheck.innerHTML = '';
