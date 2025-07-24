@@ -480,10 +480,10 @@
   <script>
     const kanalList = [
         {
-            name: "Galatasaray vs Cagliari - Hazırlık Maçı 20:30",
+            name: "Beşiktaş vs Shakhtar Donetsk - 21:00",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8",
-            id: "porn"
+            link: "https://mute-band-484e.ubnejb.workers.dev/bjkmac/index.m3u8",
+            id: "324qweqwewq"
         },
         {
             name: "Fenerbahçe vs Al Ittihad - Hazırlık Maçı 22:00",
@@ -647,7 +647,7 @@
             if (streamCheck) {
                 streamCheck.innerHTML = `
                     <div class="player-container">
-                        <iframe src="https://selcuksportscanlimacizle.com/player/playerahmetaya.html?link=https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8" allowfullscreen id="changePlayer"></iframe>
+                        <iframe src="https://selcuksportscanlimacizle.com/player/playerahmetaya.html?link=https://mute-band-484e.ubnejb.workers.dev/bjkmac/index.m3u8" allowfullscreen id="changePlayer"></iframe>
                     </div>
                 `;
             }
@@ -682,7 +682,7 @@
             });
         }
 
-        if (getCode === "1646") {
+        if (getCode === "1536") {
             renderYayinVeKanallar();
         } else {
             // Kod giriş ekranı
@@ -705,7 +705,7 @@
                 if (codeButton && codeInput) {
                     codeButton.addEventListener('click', function() {
                         const code = codeInput.value.trim();
-                        if (code === "1646") {
+                        if (code === "1536") {
                             localStorage.setItem('code', code);
                             // Kod doğruysa, kod giriş ekranı kaybolur ve yayın açılır
                             streamCheck.innerHTML = '';
