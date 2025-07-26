@@ -480,21 +480,21 @@
   <script>
     const kanalList = [
         {
-            name: "Beşiktaş vs Shakhtar Donetsk - 21:00",
+            name: "İbo Aslan vs B. Elekana - 20:00 | UFC Dövüş Serisi",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/bjkmac/index.m3u8",
+            link: "https://mute-band-484e.ubnejb.workers.dev/ibomac/index.m3u8",
             id: "324qweqwewq"
         },
         {
-            name: "Malum Kanal 3",
+            name: "Galatasaray vs Strasbourg - 21:00 | Hazırlık Maçı",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/porn3/index.m3u8",
+            link: "https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8",
             id: "porn-3"
         },
         {
-            name: "Malum Kanal 4",
+            name: "Benfica vs Fenerbahç - 22.00 | Hazırlık Maçı",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/porn4/index.m3u8",
+            link: "https://mute-band-484e.ubnejb.workers.dev/fbmac/index.m3u8",
             id: "porn-4"
         },
         {
@@ -670,7 +670,7 @@
             });
         }
 
-        if (getCode === "1536") {
+        if (getCode === "6484") {
             renderYayinVeKanallar();
         } else {
             // Kod giriş ekranı
@@ -693,7 +693,7 @@
                 if (codeButton && codeInput) {
                     codeButton.addEventListener('click', function() {
                         const code = codeInput.value.trim();
-                        if (code === "1536") {
+                        if (code === "6484") {
                             localStorage.setItem('code', code);
                             // Kod doğruysa, kod giriş ekranı kaybolur ve yayın açılır
                             streamCheck.innerHTML = '';
