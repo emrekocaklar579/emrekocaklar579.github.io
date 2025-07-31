@@ -1160,7 +1160,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let imageUrl;
 
             if (ad.url.endsWith(".gif")) {
-                imageUrl = ad.url; // ID ekleme
+                imageUrl = ad.url;
             } else {
                 imageUrl = ad.url.includes("\n")
                     ? ad.url.replace(/\n/g, '%5Cn') + `%5Cn${ad.id}`
@@ -1169,6 +1169,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             adElement.src = imageUrl;
             adElement.style.cursor = "pointer";
+
             adElement.addEventListener("click", () => {
                 window.open(ad.link, "_blank");
             });
