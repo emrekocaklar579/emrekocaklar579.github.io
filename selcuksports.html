@@ -1138,23 +1138,29 @@
     ]
 
 
-    document.addEventListener('DOMContentLoaded', function () {
-        ads.forEach(ad => {
-            const adElement = document.getElementById(ad.id);
-            if (adElement) {
-                let imageUrl = ad.url.includes("\n")
+document.addEventListener('DOMContentLoaded', function () {
+    ads.forEach(ad => {
+        const adElement = document.getElementById(ad.id);
+        if (adElement) {
+            let imageUrl;
+
+            if (ad.url.endsWith(".gif")) {
+                imageUrl = ad.url; // ID ekleme
+            } else {
+                imageUrl = ad.url.includes("\n")
                     ? ad.url.replace(/\n/g, '%5Cn') + `%5Cn${ad.id}`
                     : ad.url + `+${ad.id}`;
-
-                adElement.src = imageUrl;
-
-                adElement.style.cursor = "pointer";
-                adElement.addEventListener("click", () => {
-                    window.open(ad.link, "_blank");
-                });
             }
-        });
+
+            adElement.src = imageUrl;
+            adElement.style.cursor = "pointer";
+            adElement.addEventListener("click", () => {
+                window.open(ad.link, "_blank");
+            });
+        }
     });
+});
+
 </script>
 
 
