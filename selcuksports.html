@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="SelçukSports, Selcuksports En Güncel Giriş Adresi">
     <meta property="og:description" content="SelçukSports ile  donmadan hizmetin keyfini yaşayın! Selcuksports, Kesintisiz tüm gelişmeler hakkında bilgileri burada sunar.">
-    <meta property="og:url" content="https://selcuksports1.com/">
+    <meta property="og:url" content="https://selcuksports2.com/">
     <meta property="og:image" content="https://hizliresims.com/uploads/img_6844b8853f92c2.16338842.jpg">
 
     <link rel="canonical" href="https://selcuksports2.com/" />
@@ -521,7 +521,7 @@
                 <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
                     alt="Sol Yan Reklam Alanı 1 - Canlı Maç" class="ad-image" id="ads-banner1">
             </div>
-            <div class="ad-banner side-ad">
+            <div class="ad-banner side-ad desktop_check">
                 <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
                     alt="Sol Yan Reklam Alanı 2 - Selcuksports" class="ad-image" id="ads-banner2">
             </div>
@@ -610,12 +610,12 @@
             </section>
         </div>
 
-        <div class="side-ads-container desktop_check">
-            <div class="ad-banner side-ad">
+        <div class="side-ads-container">
+            <div class="ad-banner side-ad desktop_check">
                 <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
                     alt="Sol Yan Reklam Alanı 1 - Canlı Maç" class="ad-image" id="ads-banner7">
             </div>
-            <div class="ad-banner side-ad">
+            <div class="ad-banner side-ad desktop_check">
                 <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
                     alt="Sol Yan Reklam Alanı 2 - Selcuksports" class="ad-image" id="ads-banner8">
             </div>
@@ -625,8 +625,8 @@
 
     <iframe src="./sayac.html" style="display: none;"></iframe>
 
+
     <style>
-        /* Fixed Footer Ads */
         .fixed-footer {
             position: fixed;
             bottom: 0;
@@ -638,1207 +638,27 @@
             border-top: 2px solid rgba(0, 255, 136, 0.2);
             box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
             padding: 8px 0;
-            animation: slideUpFooter 0.5s ease-out;
         }
-
-        @keyframes slideUpFooter {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
+    
         .footer-ad-container {
             display: flex;
             justify-content: space-between;
-            gap: 2px;
+            flex-wrap: wrap;
+            gap: 6px;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 5px;
+            padding: 0 8px;
         }
-
+    
         .footer-ad-link {
-            display: inline-block;
-            transition: all 0.3s ease;
+            flex: 1 1 48%;
+            position: relative;
             border-radius: 8px;
             overflow: hidden;
-            position: relative;
-            flex: 1;
-            width: calc(50% - 1px);
-        }
-
-        .footer-ad-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent, rgba(0, 255, 136, 0.1), transparent);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 1;
-        }
-
-        .footer-ad-link:hover::before {
-            opacity: 1;
-        }
-
-        .footer-ad-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
-        }
-
-        .desktop-footer-ad,
-        .mobile-footer-ad {
-            max-height: 60px;
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 255, 136, 0.1);
-            object-fit: contain;
-        }
-
-        .desktop-footer-ad:hover,
-        .mobile-footer-ad:hover {
-            border-color: rgba(0, 255, 136, 0.3);
-            filter: brightness(1.1);
-        }
-
-        /* Desktop görünümü */
-        .desktop-footer-ad {
-            display: block;
-        }
-
-        .mobile-footer-ad {
-            display: none;
-        }
-
-        /* Tablet ve mobil responsive */
-        @media (max-width: 768px) {
-            .footer-ad-container {
-                gap: 2px;
-                padding: 0 3px;
-            }
-
-            .desktop-footer-ad,
-            .mobile-footer-ad {
-                max-height: 55px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .footer-ad-container {
-                flex-direction: column;
-                gap: 3px;
-                padding: 0 5px;
-            }
-
-            .footer-ad-link {
-                width: 100%;
-            }
-
-            .desktop-footer-ad,
-            .mobile-footer-ad {
-                max-height: 45px;
-            }
-
-            .fixed-footer {
-                padding: 10px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .footer-ad-container {
-                gap: 2px;
-                padding: 0 3px;
-            }
-
-            .desktop-footer-ad,
-            .mobile-footer-ad {
-                max-height: 40px;
-            }
-
-            .fixed-footer {
-                padding: 8px 0;
-            }
-        }
-
-        /* Ana içeriğe padding ekle (fixed footer için) */
-        body {
-            padding-bottom: 80px;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding-bottom: 110px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding-bottom: 100px;
-            }
-        }
-    </style>
-
-
-   <div class="fixed-footer">
-    <div class="footer-ad-container">
-
-        <div class="footer-ad-link">
-            <img class="desktop-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Alt+sabit+reklam+alani+1"
-                id="alt-sabit-1-desktop"
-                alt="Masaüstü Alt Reklam 1 - SelçukSports Reklam">
-            <img class="mobile-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Mobil+alt+reklam+alani+1"
-                id="alt-sabit-1-mobile"
-                alt="Mobil Alt Reklam 1 - Canlı Maç İzle Reklam">
-        </div>
-
-        <div class="footer-ad-link">
-            <img class="desktop-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Alt+sabit+reklam+alani+2"
-                id="alt-sabit-2-desktop"
-                alt="Masaüstü Alt Reklam 2">
-            <img class="mobile-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Mobil+alt+reklam+alani+2"
-                id="alt-sabit-2-mobile"
-                alt="Mobil Alt Reklam 2 ">
-        </div>
-
-    </div>
-</div>
-
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 <strong>SelçukSports</strong> Tüm hakları saklıdır.</p>
-            <p>Bu site, <strong>SelçukSports</strong> markasına ait ücretsiz HD <strong>selçuksports</strong> hizmeti
-                sunmaktadır. En iyi <strong>selcuksports</strong> deneyimi için bizi takip edin!</p>
-
-        </div>
-    </footer>
-
-
-</body>
-
-<script src="./script.js"></script> 
-
-<script>
-    const kanalList = [
-        {
-            name: "İbo Aslan vs B. Elekana - 20:00 | UFC Dövüş Serisi",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/ibomac/index.m3u8",
-            id: "324qweqwewq"
-        },
-        {
-            name: "Galatasaray vs Strasbourg - 21:00 | Hazırlık Maçı",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8",
-            id: "porn-3"
-        },
-        {
-            name: "Benfica vs Fenerbahçe - 22.00 | Hazırlık Maçı",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/fbmac/index.m3u8",
-            id: "porn-4"
-        },
-        {
-            name: "beIN SPORTS 1 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/bein/index.m3u8",
-            id: "bein-sports-1"
-        },
-        {
-            name: "beIN SPORTS 2 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/bein2/index.m3u8",
-            id: "bein-sports-2"
-        },
-        {
-            name: "beIN SPORTS 3 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/bein3/index.m3u8",
-            id: "bein-sports-3"
-        },
-        {
-            name: "beIN SPORTS 4 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/bein/index.m3u8",
-            id: "bein-sports-4"
-        },
-        {
-            name: "beIN SPORTS 5 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/porn/index.m3u8",
-            id: "bein-sports-5"
-        },
-        {
-            name: "SMARTSPOR 1 FULL HD",
-            link: "https://mute-band-484e.ubnejb.workers.dev/smartspor/index.m3u8",
-            id: "smart-spor-1"
-        },
-        {
-            name: "SMARTSPOR 2 FULL HD",
-            link: "https://mute-band-484e.ubnejb.workers.dev/smartspor2/index.m3u8",
-            id: "smart-spor-2"
-        },
-        {
-            name: "S-SPORT 1",
-            link: "https://mute-band-484e.ubnejb.workers.dev/ssport/index.m3u8",
-            id: "s-sport-1"
-        },
-        {
-            name: "S-SPORT 2",
-            link: "https://mute-band-484e.ubnejb.workers.dev/ssport2/index.m3u8",
-            id: "s-sport-2"
-        },
-        {
-            name: "TRT 1 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://tv-trt1.medya.trt.com.tr/master_720.m3u8",
-            id: "trt1"
-        },
-        {
-            name: "TRT Haber FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://tv-trthaber.medya.trt.com.tr/master_720.m3u8",
-            id: "trt-haber"
-        },
-        {
-            name: "Haber Türk FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://ciner-live.daioncdn.net/haberturktv/haberturktv_720p.m3u8",
-            id: "haber-turk"
-        },
-        {
-            name: "TV8 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/tv8/index.m3u8",
-            id: "tv8"
-        },
-        {
-            name: "TV8'5 FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/tv85/index.m3u8",
-            id: "tv8bucuk"
-        },
-        {
-            name: "Kanal D FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://demiroren-live.daioncdn.net/kanald/kanald_720p.m3u8",
-            id: "kanal-d"
-        },
-        {
-            name: "Show TV FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://ciner-live.daioncdn.net/showtv/showtv_720p.m3u8",
-            id: "show-tv"
-        },
-        {
-            name: "Halk TV FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://halktv-live.daioncdn.net/halktv/halktv_720p.m3u8",
-            id: "halk-tv"
-        },
-        {
-            name: "Star TV FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://dogus-live.daioncdn.net/startv/startv_720p.m3u8",
-            id: "star-tv"
-        },
-        {
-            name: "TRT Belgesel FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8",
-            id: "trt-belgesel"
-        },
-        {
-            name: "Beyaz TV FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8",
-            id: "beyaz-tv"
-        },
-        {
-            name: "TRT World FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://tv-trtworld.medya.trt.com.tr/master_720.m3u8",
-            id: "trt-world"
-        },
-        {
-            name: "TRT Türk FULL HD",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://tv-trtturk.medya.trt.com.tr/master_720.m3u8",
-            id: "trt-turk"
-        }
-    ]
-    document.addEventListener('DOMContentLoaded', function () {
-        const getCode = localStorage.getItem('code') || "0000";
-        const channelLists = document.querySelectorAll('#channel-lists');
-        const streamCheck = document.getElementById("changeStream");
-
-        function renderYayinVeKanallar() {
-            if (streamCheck) {
-                streamCheck.innerHTML = `
-                    <div class="player-container">
-                        <iframe src="https://selcuksportscanlimacizle.com/player/player.html?link=https://mute-band-484e.ubnejb.workers.dev/bjkmac/index.m3u8" allowfullscreen id="changePlayer"></iframe>
-                    </div>
-                `;
-            }
-            channelLists.forEach(function (channelList) {
-                if (channelList) {
-                    channelList.innerHTML = '';
-                    kanalList.forEach(function (kanal) {
-                        channelList.innerHTML += `
-                        <div class="channel-item" data-channel="${kanal.id}">
-                            <i class="fas fa-play"></i>
-                            <div class="channel-info">
-                                <span class="channel-name">${kanal.name}</span>
-                            </div>
-                            <span class="live-indicator">CANLI</span>
-                        </div>`;
-                    });
-                    const channelItems = channelList.querySelectorAll('.channel-item');
-                    channelItems.forEach(function (item) {
-                        item.addEventListener('click', function () {
-                            document.querySelectorAll('.channel-item').forEach(ch => ch.classList.remove('active'));
-                            this.classList.add('active');
-                            const channelId = this.getAttribute('data-channel');
-                            const selectedChannel = kanalList.find(kanal => kanal.id === channelId);
-                            const changePlayer = document.getElementById('changePlayer');
-                            if (changePlayer && selectedChannel) {
-                                changePlayer.setAttribute('data-current-channel', channelId);
-                                changePlayer.src = `https://selcuksportscanlimacizle.com/player/player.html?link=${encodeURIComponent(selectedChannel.link)}`;
-                            }
-                        });
-                    });
-                }
-            });
-        }
-
-        if (getCode === "6484") {
-            renderYayinVeKanallar();
-        } else {
-            // Kod giriş ekranı
-            if (streamCheck) {
-                streamCheck.innerHTML = `
-                    <div class="code-giris-container">
-                        <input type="text" id="codeInput" placeholder="Yayın Kodunu Giriniz">
-                        <div class="button-row">
-                            <button id="codeButton">İzlemeye Başla</button>
-                            <button id="telegramButton" class="telegram-btn">Telegram Giriş</button>
-                        </div>
-                        <div class="code-info">Kodu Telegram Grubumuzdan Ücretsiz Alabilirsiniz</div>
-                        <div class="code-error" id="codeError" style="display:none;"></div>
-                    </div>
-                `;
-                const codeInput = document.getElementById('codeInput');
-                const codeButton = document.getElementById('codeButton');
-                const codeError = document.getElementById('codeError');
-                const telegramButton = document.getElementById('telegramButton');
-                if (codeButton && codeInput) {
-                    codeButton.addEventListener('click', function () {
-                        const code = codeInput.value.trim();
-                        if (code === "6484") {
-                            localStorage.setItem('code', code);
-                            // Kod doğruysa, kod giriş ekranı kaybolur ve yayın açılır
-                            streamCheck.innerHTML = '';
-                            renderYayinVeKanallar();
-                        } else {
-                            codeError.textContent = 'Kod Hatalı';
-                            codeError.style.display = 'block';
-                        }
-                    });
-                    codeInput.addEventListener('keydown', function (e) {
-                        if (e.key === 'Enter') {
-                            codeButton.click();
-                        }
-                    });
-                }
-                if (telegramButton) {
-                    telegramButton.addEventListener('click', function () {
-                        window.open('https://t.me/+8PM0i60BnFY0NjZk', '_blank');
-                    });
-                }
-            }
-        }
-    });
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        gtag('event', 'geldi_orospu_cucugu', {
-            'event_category': 'Sayfa',
-            'event_label': document.title,
-            'page_location': window.location.href,
-            'page_referrer': document.referrer 
-        });
-    });
-
-</script>
-
-
-<script>
-    let ads = [
-        {
-            id: "top-ads-1",
-            url: "https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "top-ads-2",
-            url: "https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-
-        {
-            id: "ads-banner1",
-            url: "https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner2",
-            url: "https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner3",
-            url: "https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner4",
-            url: "https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner5",
-            url: "https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner6",
-            url: "https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner7",
-            url: "https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-        {
-            id: "ads-banner8",
-            url: "https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz",
-            link: "https://t.me/+8PM0i60BnFY0NjZk",
-        },
-
-        {
-            id: "alt-sabit-1",
-            url: "https://i.hizliresim.com/so8gvkc.gif",
-            link: "https://t.me/selcukdestek",
-        },
-        {
-            id: "alt-sabit-2",
-            url: "https://i.hizliresim.com/so8gvkc.gif",
-            link: "https://t.me/selcukdestek",
-        },
-
-        {
-            id: "alt-sabit-1-desktop",
-            url: "https://i.hizliresim.com/so8gvkc.gif",
-            link: "https://t.me/selcukdestek",
-        },
-        {
-            id: "alt-sabit-2-desktop",
-            url: "https://i.hizliresim.com/so8gvkc.gif",
-            link: "https://t.me/selcukdestek",
-        }
-    ]
-
-
-<!DOCTYPE html>
-<html lang="tr">
-
-<head>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SelçukSports, Selcuksports En Güncel Giriş Adresi</title>
-    <meta name="description" content="SelçukSports ile  donmadan hizmetin keyfini yaşayın! Selcuksports, Kesintisiz tüm gelişmeler hakkında bilgileri burada sunar.">
-    <meta name="keywords" content="selcuksportshd, selcuksports, selcuksport, selcuksporthd, selcuksportshd xyz, selcuk sports, selcuk sport, selcuksportshd.xyz selcuk sports hd, selcuksport hd, selçuk spor, selçuksports, selçuk sports, selçuk sports tv, selçuk sports izle">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="SelçukSports, Selcuksports En Güncel Giriş Adresi">
-    <meta property="og:description" content="SelçukSports ile  donmadan hizmetin keyfini yaşayın! Selcuksports, Kesintisiz tüm gelişmeler hakkında bilgileri burada sunar.">
-    <meta property="og:url" content="https://selcuksports1.com/">
-    <meta property="og:image" content="https://hizliresims.com/uploads/img_6844b8853f92c2.16338842.jpg">
-
-    <link rel="canonical" href="https://selcuksports2.com/" />
-    <link rel="apple-touch-icon" href="https://hizliresims.com/uploads/img_6844b8853f92c2.16338842.jpg">
-
-    <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats, async) { async = !1 !== async; var params = { embedChatsParameters: chats instanceof Array ? chats : [chats], lang: navigator.language || navigator.userLanguage, needLoadCode: 'undefined' == typeof Chatbro, embedParamsVersion: localStorage.embedParamsVersion, chatbroScriptVersion: localStorage.chatbroScriptVersion }, xhr = new XMLHttpRequest; xhr.withCredentials = !0, xhr.onload = function () { eval(xhr.responseText) }, xhr.onerror = function () { console.error('Chatbro loading error') }, xhr.open('GET', 'https://www.chatbro.com/embed.js?' + btoa(unescape(encodeURIComponent(JSON.stringify(params)))), async), xhr.send() }/* Chatbro Widget Embed Code End */ChatbroLoader({ parentEncodedChatId: '397RN', chatTitle: 'selcuksports' });</script>
-
-    <meta name="google-site-verification" content="iXxHHIF9Q5FoYBjC7EOYp9lvs8JmrvL8x2Qb8aycuk4" />
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-        "@type": "Question",
-        "name": "SelçukSports güvenli mi?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet, SelçukSports %100 güvenli bir platform olarak hizmet vermektedir. Herhangi bir üyelik, kayıt veya kişisel bilgi girişi gerektirmez. Anonim olarak tüm maçları izleyebilirsiniz. Güvenli bir şekilde keyfini çıkarın."
-        }
-        },
-        {
-        "@type": "Question",
-        "name": "Neden SelçukSports yayınları donmuyor?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SelçukSports, gelişmiş CDN (İçerik Dağıtım Ağı) altyapısı ve yüksek bant genişliğine sahip sunucular kullanır. Bu sayede, en yoğun anlarda bile kesintisiz ve donmayan deneyimi sunarız."
-        }
-        },
-        {
-        "@type": "Question",
-        "name": "Hangi cihazlarda SelçukSports kullanılabilir?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SelçukSports platformu; akıllı telefon, tablet, bilgisayar, dizüstü bilgisayar ve akıllı TV'ler de dahil olmak üzere tüm modern cihazlarla tam uyumludur. Dilediğiniz yerden rahatça izleyebilirsiniz. Her platformdan kesintisiz fırsat sunuyoruz."
-        }
-        }
-    ]
-    }
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL91958WPP"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-XL91958WPP');
-    </script>
-
-    <style>
-        .desktop-channels {
-            display: block;
-        }
-
-        .mobile-channels {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .desktop-channels {
-                display: none;
-            }
-
-            .mobile-channels {
-                display: block;
-            }
-        }
-
-        .intro-seo-text {
-            background: linear-gradient(135deg,
-                    rgba(0, 255, 136, 0.12) 0%,
-                    rgba(0, 204, 255, 0.1) 30%,
-                    rgba(18, 28, 45, 0.95) 70%,
-                    rgba(15, 15, 35, 0.98) 100%);
-            border: 1px solid rgba(0, 255, 136, 0.25);
-            border-radius: 20px;
-            padding: 35px 30px;
-            margin: 25px auto 35px auto;
-            backdrop-filter: blur(20px);
-            box-shadow:
-                0 10px 40px rgba(0, 0, 0, 0.4),
-                inset 0 1px 0 rgba(255, 255, 255, 0.12),
-                0 0 30px rgba(0, 255, 136, 0.1);
-            position: relative;
-            overflow: hidden;
-            max-width: 1200px;
-            transform: translateY(0);
-            transition: all 0.3s ease;
-        }
-
-        .intro-seo-text:hover {
-            transform: translateY(-2px);
-            box-shadow:
-                0 15px 50px rgba(0, 0, 0, 0.5),
-                inset 0 1px 0 rgba(255, 255, 255, 0.15),
-                0 0 40px rgba(0, 255, 136, 0.15);
-        }
-
-        .intro-seo-text::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg,
-                    transparent 0%,
-                    #00ff88 20%,
-                    #00ccff 40%,
-                    #ffffff 50%,
-                    #00ccff 60%,
-                    #00ff88 80%,
-                    transparent 100%);
-            animation: shimmerFlow 4s ease-in-out infinite;
-        }
-
-        .intro-seo-text::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg,
-                    transparent 0%,
-                    rgba(0, 255, 136, 0.3) 50%,
-                    transparent 100%);
-            animation: shimmerFlow 4s ease-in-out infinite reverse;
-        }
-
-        @keyframes shimmerFlow {
-
-            0%,
-            100% {
-                opacity: 0.4;
-                transform: scaleX(0.8);
-            }
-
-            50% {
-                opacity: 1;
-                transform: scaleX(1);
-            }
-        }
-
-        .intro-seo-text h1 {
-            font-size: 2.8em;
-            font-weight: 800;
-            margin-bottom: 25px;
-            background: linear-gradient(45deg,
-                    #00ff88 0%,
-                    #00ccff 30%,
-                    #ffffff 60%,
-                    #00ccff 80%,
-                    #00ff88 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-align: center;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-            line-height: 1.1;
-            animation: titlePulse 3s ease-in-out infinite alternate;
-            letter-spacing: -0.5px;
-            position: relative;
-        }
-
-        .intro-seo-text h1::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #00ff88, transparent);
-            animation: underlineGlow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes titlePulse {
-            from {
-                filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.3));
-                transform: scale(1);
-            }
-
-            to {
-                filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.6));
-                transform: scale(1.01);
-            }
-        }
-
-        @keyframes underlineGlow {
-            from {
-                width: 80px;
-                opacity: 0.6;
-            }
-
-            to {
-                width: 120px;
-                opacity: 1;
-            }
-        }
-
-        .intro-seo-text p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #e8e8e8;
-            text-align: center;
-            font-weight: 400;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-            margin: 0;
-            animation: fadeInUp 1.5s ease-out;
-            letter-spacing: 0.3px;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Bold kelimeleri özel vurgula */
-        .intro-seo-text p strong,
-        .intro-seo-text strong {
-            color: #00ff88;
-            font-weight: 700;
-            text-shadow:
-                0 0 10px rgba(0, 255, 136, 0.5),
-                0 2px 4px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(45deg, #00ff88, #00ccff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: textShimmer 2.5s ease-in-out infinite alternate;
-        }
-
-        @keyframes textShimmer {
-            from {
-                filter: brightness(1);
-            }
-
-            to {
-                filter: brightness(1.3);
-            }
-        }
-
-        /* Responsive tasarım */
-        @media (max-width: 768px) {
-            .intro-seo-text {
-                padding: 30px 25px;
-                margin: 20px 15px 30px 15px;
-                border-radius: 15px;
-            }
-
-            .intro-seo-text h1 {
-                font-size: 2.2em;
-                margin-bottom: 20px;
-                letter-spacing: -0.3px;
-            }
-
-            .intro-seo-text p {
-                font-size: 1.1em;
-                line-height: 1.7;
-                letter-spacing: 0.2px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .intro-seo-text {
-                padding: 25px 20px;
-                margin: 15px 10px 25px 10px;
-                border-radius: 12px;
-            }
-
-            .intro-seo-text h1 {
-                font-size: 1.9em;
-                margin-bottom: 18px;
-                letter-spacing: -0.2px;
-            }
-
-            .intro-seo-text p {
-                font-size: 1.05em;
-                line-height: 1.6;
-                letter-spacing: 0.1px;
-            }
-
-            .intro-seo-text h1::after {
-                width: 60px;
-            }
-        }
-
-        /* Extra küçük ekranlar için */
-        @media (max-width: 320px) {
-            .intro-seo-text {
-                padding: 20px 15px;
-                margin: 10px 5px 20px 5px;
-            }
-
-            .intro-seo-text h1 {
-                font-size: 1.7em;
-                margin-bottom: 15px;
-            }
-
-            .intro-seo-text p {
-                font-size: 1em;
-                line-height: 1.5;
-            }
-        }
-
-        /* Kod giriş ekranı için modern tasarım */
-        .code-giris-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 0 30px 0;
-        }
-
-        .code-giris-container .button-row {
-            display: flex;
-            flex-direction: row;
-            gap: 12px;
-            width: 100%;
-            justify-content: center;
-        }
-
-        .code-giris-container input[type="text"] {
-            padding: 12px 18px;
-            border: 1.5px solid #00ff88;
-            border-radius: 8px;
-            font-size: 1.2em;
-            margin-bottom: 15px;
-            outline: none;
-            transition: border 0.2s;
-            background: #181f2d;
-            color: #fff;
-            box-shadow: 0 2px 12px rgba(0, 255, 136, 0.08);
-            width: 260px;
-        }
-
-        .code-giris-container input[type="text"]:focus {
-            border: 1.5px solid #00ccff;
-        }
-
-        .code-giris-container button {
-            padding: 10px 28px;
-            background: #181f2d;
-            color: #fff;
-            border: 1.5px solid #00ff88;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0, 255, 136, 0.10);
-            transition: background 0.2s, color 0.2s, border 0.2s;
-            min-width: 110px;
         }
-
-        .code-giris-container button:hover {
-            background: #232b3d;
-            color: #00ff88;
-            border: 1.5px solid #00ccff;
-        }
-
-        .code-giris-container .telegram-btn {
-            background: #229ED9;
-            color: #fff;
-            border: 1.5px solid #229ED9;
-            margin-left: 0;
-            transition: background 0.2s, color 0.2s, border 0.2s;
-        }
-
-        .code-giris-container .telegram-btn:hover {
-            background: #176cae;
-            color: #fff;
-            border: 1.5px solid #176cae;
-        }
-
-        .code-giris-container .code-error {
-            color: #ff4d4f;
-            margin-top: 8px;
-            font-size: 1em;
-            font-weight: 600;
-        }
-
-        .code-giris-container .code-info {
-            color: #b0b0b0;
-            font-size: 0.98em;
-            margin-top: 6px;
-            text-align: center;
-        }
-    </style>
-
-
-    <style>
-        .mobil_check {
-            display: none;
-        }
-
-        .desktop_check {
-            display: block;
-        }
-
-        @media (max-width: 768px) {
-            .mobil_check {
-                display: block;
-            }
-
-            .desktop_check {
-                display: none;
-            }
-        }
-    </style>
-
-    <style>
-        .page-layout {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            width: 100%;
-            gap: 24px;
-        }
-
-        .main-content {
-            flex: 1 1 800px;
-            max-width: 1200px;
-            min-width: 0;
-        }
-
-        .side-banner {
-            width: 160px;
-            min-width: 160px;
-            max-width: 160px;
-            height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(18, 28, 45, 0.92);
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-            padding: 4px;
-        }
-
-        .side-banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 1200px) {
-            .side-banner {
-                display: none;
-            }
-
-            .main-content {
-                max-width: 100%;
-            }
-        }
-    </style>
-
-
-</head>
-
-<body id="yuda-cdn">
-
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="" alt="SelçukSports Canlı Maç İzle Logosu" class="logo-image"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="logo-fallback" style="display: none;">
-                    <i class="fas fa-futbol"></i>
-                    <span>SelçukSports</span>
-                </div>
-            </div>
-            <nav class="nav">
-                <a href="/" class="nav-link active">Canlı Yayınlar</a>
-                <a href="https://t.me/+8PM0i60BnFY0NjZk" target="_blank" class="nav-link">İletişim Kanalı</a>
-            </nav>
-        </div>
-    </header>
-
-    <div class="top-ads">
-        <div class="ad-banner top-ad">
-            <img src="https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz"
-                alt="Üst Banner Reklam 1 - SelçukSports" class="ad-image" id="top-ads-1">
-        </div>
-        <div class="ad-banner top-ad">
-            <img src="https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz"
-                alt="Üst Banner Reklam 2 - Maç İzle" class="ad-image" id="top-ads-2">
-        </div>
-    </div>
-
-    <div class="page-layout">
-        <div class="side-ads-container desktop_check">
-            <div class="ad-banner side-ad">
-                <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
-                    alt="Sol Yan Reklam Alanı 1 - Canlı Maç" class="ad-image" id="ads-banner1">
-            </div>
-            <div class="ad-banner side-ad">
-                <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
-                    alt="Sol Yan Reklam Alanı 2 - Selcuksports" class="ad-image" id="ads-banner2">
-            </div>
-        </div>
-
-        <div class="main-content">
-            <section class="intro-seo-text">
-                <div class="container">
-                    <h1>SelçukSports: Güncel Giriş Adresi</h1>
-                    <p>Futbolun ve tüm spor karşılaşmalarının heyecanını HD kalitede, kesintisiz izlemek ister misiniz?
-                        <strong>SelçukSports</strong> doğru adresiniz! Artık en sevdiğiniz takımların mücadelelerini,
-                        kritik
-                        anları ve unutulmaz golleri anında ekranlarınıza taşıyoruz. <strong>Selcuksports</strong> ile
-                        artık tek
-                        bir golü veya kritik sayıyı kaçırmak zorunda değilsiniz. Aradığınız kesintisiz
-                        <strong>selçuksports</strong> keyfi burada! Eski <strong>selcuk sports</strong> veya
-                        <strong>selcuksportshd</strong> arayışına son, modern ve güvenilir yayınlar için doğru
-                        yerdesiniz.
-                    </p>
-                </div>
-                <br>
-
-
-                <div class="center-content">
-                    <div class="player-section">
-
-
-                        <div class="top-ads mobil_check">
-                            <div class="ad-banner top-ad">
-                                <img src="https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz"
-                                    alt="Üst Banner Reklam 1 - SelçukSports" class="ad-image" id="ads-banner3">
-                            </div>
-                            <div class="ad-banner top-ad">
-                                <img src="https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz"
-                                    alt="Üst Banner Reklam 2 - Maç İzle" class="ad-image" id="ads-banner4">
-                            </div>
-                        </div>
-
-                        <div class="video-player" id="changeStream">
-                            <div class="player-container">
-                                <iframe
-                                    src="https://selcuksportscanlimacizle.com/player/player.html?link=https://mute-band-484e.ubnejb.workers.dev/bein/index.m3u8"
-                                    allowfullscreen id="changePlayer"></iframe>
-                            </div>
-                        </div>
-
-                        <div class="top-ads mobil_check">
-                            <div class="ad-banner top-ad">
-                                <img src="https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz"
-                                    alt="Üst Banner Reklam 1 - SelçukSports" class="ad-image" id="ads-banner5">
-                            </div>
-                            <div class="ad-banner top-ad">
-                                <img src="https://placehold.co/150x30/0076e3/fff?text=Reklam+alani+icin+tiklayiniz"
-                                    alt="Üst Banner Reklam 2 - Maç İzle" class="ad-image" id="ads-banner6">
-                            </div>
-                        </div>
-
-                        <div class="channels-section mobile-channels">
-                            <h2><i class="fas fa-list"></i> Maç Kanalları Listesi (Canlı Yayınlar)</h2>
-                            <div class="channels-container">
-                                <div class="channel-list" id="channel-lists">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="chat-section">
-                            <iframe src="https://chat.selcuksports2.com/" title="Canlı Maç Sohbeti" allow="fullscreen"
-                                loading="lazy">
-                                <div class="chat-fallback">
-                                    <h3><i class="fas fa-comments"></i> Canlı Chat</h3>
-                                    <p>Sohbet penceresi yükleniyor...</p>
-                                    <p>Eğer sohbet görünmüyorsa, lütfen sayfayı yenileyin.</p>
-                                </div>
-                            </iframe>
-                        </div>
-                    </div>
-
-                    <div class="channels-section desktop-channels">
-                        <h2><i class="fas fa-list"></i> Maç Kanalları Listesi (Kesintisiz Yayınlar)</h2>
-                        <div class="channels-container">
-                            <div class="channel-list" id="channel-lists">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="side-ads-container desktop_check">
-            <div class="ad-banner side-ad">
-                <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
-                    alt="Sol Yan Reklam Alanı 1 - Canlı Maç" class="ad-image" id="ads-banner7">
-            </div>
-            <div class="ad-banner side-ad">
-                <img src="https://placehold.co/146x296/0076e3/fff?text=Reklam\nalani\nicin\ntiklayiniz"
-                    alt="Sol Yan Reklam Alanı 2 - Selcuksports" class="ad-image" id="ads-banner8">
-            </div>
-        </div>
-
-    </div>
-
-    <iframe src="./sayac.html" style="display: none;"></iframe>
-
-    <style>
-        /* Fixed Footer Ads */
-        .fixed-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: linear-gradient(135deg, rgba(18, 28, 45, 0.98), rgba(25, 35, 52, 0.98));
-            backdrop-filter: blur(10px);
-            border-top: 2px solid rgba(0, 255, 136, 0.2);
-            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
-            padding: 8px 0;
-            animation: slideUpFooter 0.5s ease-out;
-        }
-
-        @keyframes slideUpFooter {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .footer-ad-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 2px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 5px;
-        }
-
-        .footer-ad-link {
-            display: inline-block;
-            transition: all 0.3s ease;
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-            flex: 1;
-            width: calc(50% - 1px);
-        }
-
+    
         .footer-ad-link::before {
             content: '';
             position: absolute;
@@ -1849,140 +669,129 @@
             background: linear-gradient(45deg, transparent, rgba(0, 255, 136, 0.1), transparent);
             opacity: 0;
             transition: opacity 0.3s ease;
+            pointer-events: none;
             z-index: 1;
         }
-
+    
         .footer-ad-link:hover::before {
             opacity: 1;
         }
-
+    
         .footer-ad-link:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
         }
-
+    
+        .footer-ad-link img {
+            display: block;
+            width: 100%;
+            max-height: 60px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            transition: filter 0.3s ease, border-color 0.3s ease;
+        }
+    
+        .footer-ad-link img:hover {
+            filter: brightness(1.1);
+            border-color: rgba(0, 255, 136, 0.3);
+        }
+    
+        /* Gizle tüm cihazlarda varsayılan */
         .desktop-footer-ad,
         .mobile-footer-ad {
-            max-height: 60px;
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 255, 136, 0.1);
-            object-fit: contain;
+            display: none !important;
         }
-
-        .desktop-footer-ad:hover,
-        .mobile-footer-ad:hover {
-            border-color: rgba(0, 255, 136, 0.3);
-            filter: brightness(1.1);
-        }
-
-        /* Desktop görünümü */
-        .desktop-footer-ad {
-            display: block;
-        }
-
-        .mobile-footer-ad {
-            display: none;
-        }
-
-        /* Tablet ve mobil responsive */
-        @media (max-width: 768px) {
-            .footer-ad-container {
-                gap: 2px;
-                padding: 0 3px;
-            }
-
-            .desktop-footer-ad,
-            .mobile-footer-ad {
-                max-height: 55px;
+    
+        /* Masaüstü görünüm */
+        @media (min-width: 601px) {
+            .desktop-footer-ad {
+                display: block !important;
             }
         }
-
+    
+        /* Mobil görünüm */
         @media (max-width: 600px) {
             .footer-ad-container {
                 flex-direction: column;
-                gap: 3px;
-                padding: 0 5px;
+                padding: 0 6px;
+                gap: 8px;
             }
-
+    
             .footer-ad-link {
-                width: 100%;
+                flex: 1 1 100%;
             }
-
-            .desktop-footer-ad,
-            .mobile-footer-ad {
+    
+            .footer-ad-link img {
                 max-height: 45px;
             }
-
+    
+            .mobile-footer-ad {
+                display: block !important;
+            }
+    
             .fixed-footer {
                 padding: 10px 0;
             }
         }
-
+    
         @media (max-width: 480px) {
-            .footer-ad-container {
-                gap: 2px;
-                padding: 0 3px;
-            }
-
-            .desktop-footer-ad,
-            .mobile-footer-ad {
+            .footer-ad-link img {
                 max-height: 40px;
             }
-
+    
             .fixed-footer {
                 padding: 8px 0;
             }
         }
-
-        /* Ana içeriğe padding ekle (fixed footer için) */
+    
         body {
             padding-bottom: 80px;
         }
-
+    
         @media (max-width: 600px) {
             body {
                 padding-bottom: 110px;
             }
         }
-
+    
         @media (max-width: 480px) {
             body {
                 padding-bottom: 100px;
             }
         }
     </style>
+    
 
 
-<div class="fixed-footer">
-    <div class="footer-ad-container">
+    <div class="fixed-footer">
+        <div class="footer-ad-container">
 
-        <div class="footer-ad-link">
-            <img class="desktop-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Alt+sabit+reklam+alani+1"
-                id="alt-sabit-1-desktop"
-                alt="Masaüstü Alt Reklam 1 - SelçukSports Reklam">
-            <img class="mobile-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Mobil+alt+reklam+alani+1"
-                id="alt-sabit-1-mobile"
-                alt="Mobil Alt Reklam 1 - Canlı Maç İzle Reklam">
+            <div class="footer-ad-link">
+                <img class="desktop-footer-ad"
+                    src="https://placehold.co/592x58/002c6b/fff?text=Alt+sabit+reklam+alani+1"
+                    id="alt-sabit-1-desktop"
+                    alt="Masaüstü Alt Reklam 1 - SelçukSports Reklam">
+                <img class="mobile-footer-ad"
+                    src="https://placehold.co/592x58/002c6b/fff?text=Mobil+alt+reklam+alani+1"
+                    id="alt-sabit-1-mobile"
+                    alt="Mobil Alt Reklam 1 - Canlı Maç İzle Reklam">
+            </div>
+
+            <div class="footer-ad-link">
+                <img class="desktop-footer-ad"
+                    src="https://placehold.co/592x58/002c6b/fff?text=Alt+sabit+reklam+alani+2"
+                    id="alt-sabit-2-desktop"
+                    alt="Masaüstü Alt Reklam 2 - Taraftarium Reklam">
+                <img class="mobile-footer-ad"
+                    src="https://placehold.co/592x58/002c6b/fff?text=Mobil+alt+reklam+alani+2"
+                    id="alt-sabit-2-mobile"
+                    alt="Mobil Alt Reklam 2 - Justin TV Reklam">
+            </div>
+
         </div>
-
-        <div class="footer-ad-link">
-            <img class="desktop-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Alt+sabit+reklam+alani+2"
-                id="alt-sabit-2-desktop"
-                alt="Masaüstü Alt Reklam 2 - Taraftarium Reklam">
-            <img class="mobile-footer-ad"
-                src="https://placehold.co/592x58/002c6b/fff?text=Mobil+alt+reklam+alani+2"
-                id="alt-sabit-2-mobile"
-                alt="Mobil Alt Reklam 2 - Justin TV Reklam">
-        </div>
-
     </div>
-</div>
 
 
     <footer class="footer">
@@ -1997,27 +806,15 @@
 
 </body>
 
-<script src="./script.js"></script> 
+<script src="./script.js"></script>  
 
 <script>
     const kanalList = [
         {
-            name: "İbo Aslan vs B. Elekana - 20:00 | UFC Dövüş Serisi",
+            name: "----------------",
             url: "https://t.me/+8PM0i60BnFY0NjZk",
             link: "https://mute-band-484e.ubnejb.workers.dev/ibomac/index.m3u8",
             id: "324qweqwewq"
-        },
-        {
-            name: "Galatasaray vs Strasbourg - 21:00 | Hazırlık Maçı",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/gsmac/index.m3u8",
-            id: "porn-3"
-        },
-        {
-            name: "Benfica vs Fenerbahçe - 22.00 | Hazırlık Maçı",
-            url: "https://t.me/+8PM0i60BnFY0NjZk",
-            link: "https://mute-band-484e.ubnejb.workers.dev/fbmac/index.m3u8",
-            id: "porn-4"
         },
         {
             name: "beIN SPORTS 1 FULL HD",
@@ -2217,7 +1014,6 @@
                         const code = codeInput.value.trim();
                         if (code === "6484") {
                             localStorage.setItem('code', code);
-                            // Kod doğruysa, kod giriş ekranı kaybolur ve yayın açılır
                             streamCheck.innerHTML = '';
                             renderYayinVeKanallar();
                         } else {
@@ -2250,7 +1046,6 @@
             'page_referrer': document.referrer 
         });
     });
-
 </script>
 
 
@@ -2309,12 +1104,12 @@
         },
 
         {
-            id: "alt-sabit-1",
+            id: "alt-sabit-1-mobile",
             url: "https://i.hizliresim.com/so8gvkc.gif",
             link: "https://t.me/selcukdestek",
         },
         {
-            id: "alt-sabit-2",
+            id: "alt-sabit-2-mobile",
             url: "https://i.hizliresim.com/so8gvkc.gif",
             link: "https://t.me/selcukdestek",
         },
@@ -2356,11 +1151,6 @@
         });
     });
 
-</script>
-
-
-
-</html>
 </script>
 
 
