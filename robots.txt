@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://selcuksports1.com/sitemap.xml
