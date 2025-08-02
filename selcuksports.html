@@ -965,7 +965,7 @@
             if (streamCheck) {
                 streamCheck.innerHTML = `
                     <div class="player-container">
-                        <iframe src="https://selcuksportscanlimacizle.com/player/player.html?link=https://mute-band-484e.ubnejb.workers.dev/bjkmac/index.m3u8" allowfullscreen id="changePlayer"></iframe>
+                        <iframe src="https://www.youtube.com/embed/BlG2UDaVrIY" allowfullscreen id="changePlayer"></iframe>
                     </div>
                 `;
             }
@@ -992,7 +992,7 @@
                             const changePlayer = document.getElementById('changePlayer');
                             if (changePlayer && selectedChannel) {
                                 changePlayer.setAttribute('data-current-channel', channelId);
-                                changePlayer.src = `https://selcuksportscanlimacizle.com/player/player.html?link=${encodeURIComponent(selectedChannel.link)}`;
+                                changePlayer.src = `https://www.youtube.com/embed/BlG2UDaVrIY`;
                             }
                         });
                     });
@@ -1000,7 +1000,7 @@
             });
         }
 
-        if (getCode === "6484") {
+        if (getCode === "17437") {
             renderYayinVeKanallar();
         } else {
             if (streamCheck) {
@@ -1022,7 +1022,7 @@
                 if (codeButton && codeInput) {
                     codeButton.addEventListener('click', function () {
                         const code = codeInput.value.trim();
-                        if (code === "6484") {
+                        if (code === "17437") {
                             localStorage.setItem('code', code);
                             streamCheck.innerHTML = '';
                             renderYayinVeKanallar();
