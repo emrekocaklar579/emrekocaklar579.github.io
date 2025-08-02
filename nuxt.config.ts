@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', 'nuxt-charts'],
+  css: ['~/assets/css/tailwind.css'],
 
   imports: {
     autoImport: true,
