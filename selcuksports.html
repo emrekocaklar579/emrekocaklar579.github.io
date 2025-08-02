@@ -1169,9 +1169,6 @@
                 adElement.src = imageUrl;
                 adElement.style.cursor = "pointer";
 
-                adElement.style.width = ad.pixel.split("x")[0];
-                adElement.style.height = ad.pixel.split("x")[1];
-
                 adElement.addEventListener("click", () => {
                     window.open(ad.link, "_blank");
                 });
